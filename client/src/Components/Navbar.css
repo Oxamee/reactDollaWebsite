@@ -1,0 +1,47 @@
+/* ALL THE NAVBAR */
+.allTheNavBar {
+  overflow-x: hidden;
+}
+
+/* BRAND NAME */
+.brandNameContainer {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.brandNameNavBar {
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+}
+/* WIDGET STYLING */
+.widgetContainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.widgetName {
+  font-size: 15px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+}
+/* BUTTON STYLING */
+.signInContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signInButtonNavBar {
+  padding: 5px 18px;
+  background-color: rgb(64, 204, 64);
+  border-radius: 20px;
+  outline: none;
+  color: white;
+  border: none;
+}
