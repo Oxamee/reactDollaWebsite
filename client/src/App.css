@@ -2,3 +2,62 @@
   background-color: #121212;
   color: white;
 }
+/* FIRST SECTION STYLING */
+.firstSection {
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.videoBackground {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+/* FIRST SECTION COMPONENTS STYLING */
+.titleOfFirstSection {
+  font-weight: bolder;
+  font-size: 4vw;
+  color: white;
+}
+.DescriptionOfFirstSection {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2vw;
+  line-height: 20px;
+  margin: 20px 0px 30px 0px;
+  color: white;
+}
+.buttonOfFirstSection {
+  padding: 5px 20px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(57, 177, 57);
+  font-weight: 600;
+}
+/* SECOND SECTION STYLING */
+.secondSection {
+  overflow-x: hidden;
+  background-color: black;
+}
+/* COMPONENTS OF SECOND SECTION STYLING */
+.containerOfFirstCol {
+  display: block;
+  margin: auto auto;
+  width: 500px;
+  margin-top: 5%;
+}
+.littleDescriptionSecondSection {
+  font-weight: bolder;
+  color: rgb(57, 177, 57);
+}
+.titleOfSecondSection {
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+}
+.descriptionOfSecondSection {
+  color: white;
+}

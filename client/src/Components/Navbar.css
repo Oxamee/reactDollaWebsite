@@ -39,9 +39,9 @@
 }
 .signInButtonNavBar {
   padding: 5px 18px;
-  background-color: rgb(64, 204, 64);
+  background-color: rgb(57, 177, 57);
   border-radius: 20px;
   outline: none;
-  color: white;
+  color: black;
   border: none;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { Col, Row } from "reactstrap";
+
 function Navbar() {
   return (
     <div className="allTheNavBar" style={{ backgroundColor: "black" }}>
