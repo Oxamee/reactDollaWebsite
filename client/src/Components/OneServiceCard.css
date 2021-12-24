@@ -1,0 +1,15 @@
+.oneEntireCard {
+  background-color: white;
+  color: black;
+  text-align: center;
+  width: 25%;
+  padding: 30px 20px;
+  margin: 10px 1%;
+  border-radius: 15px;
+  min-height: 320px;
+}
+.titleOfCard {
+  font-size: 20px;
+  font-weight: bolder;
+  padding-top: 20px;
+}

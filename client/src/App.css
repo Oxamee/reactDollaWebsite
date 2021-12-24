@@ -99,3 +99,21 @@
 .containerOfFirstColThirdSection {
   margin-left: 0px;
 }
+/* FOURTH SECTION STYLING */
+.fourthSection {
+  background-color: black;
+  padding: 150px 50px;
+  text-align: center;
+}
+/* COMPONENTS OF FOURTH SECTION STYLING */
+
+.titleOfFourthSection {
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 70px;
+}
+.allTheServicesDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -8,6 +8,13 @@ import Lottie from "react-lottie";
 //importing all my animations
 import TravelAnimationData from "./animation/travel.json";
 import MoneyAnimationData from "./animation/money.json";
+import WinAnimationData from "./animation/win.json";
+import GraphAnimationData from "./animation/graph.json";
+import CashbackAnimationData from "./animation/cashback.json";
+
+//import services for services section
+import OneServiceCard from "./Components/OneServiceCard.jsx";
+
 function App() {
   //options for animation (use spread object ... for animationData value)
   const options = {
@@ -103,6 +110,26 @@ function App() {
             </div>
           </Col>
         </Row>
+      </div>
+      <div className="fourthSection">
+        <h1 className="titleOfFourthSection">Our Services</h1>
+        <div className="allTheServicesDiv">
+          <OneServiceCard
+            title="Reduce Expenses"
+            description="We help reduce your fees and increase your overall revenue."
+            animationData={WinAnimationData}
+          />
+          <OneServiceCard
+            title="Virtual Offices"
+            description="You can access our platform online anywhere in the world"
+            animationData={GraphAnimationData}
+          />
+          <OneServiceCard
+            title="Premium Benefits"
+            description="Unlock our special membership card that returns 5% cash back"
+            animationData={CashbackAnimationData}
+          />
+        </div>
       </div>
     </div>
   );
