@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useState } from "react";
 import Navbar from "./Components/Navbar";
 import { Row, Col } from "reactstrap";
 //importing video background
@@ -24,10 +25,17 @@ function App() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+
+  //change color of navbar on scroll
+  const [isScrolled, setScrolled] = useState(false);
+  function changeBackground() {
+    setScrolled(window.pageYOffset <= 100 ? false : true);
+  }
+  window.addEventListener("scroll", changeBackground);
   return (
     <div className="Container">
-      <Navbar />
-      <div className="firstSection">
+      <Navbar isScrolled={isScrolled} />
+      <div className="firstSection" id="1">
         <video
           src={BackgroundVideo}
           loop
@@ -43,7 +51,7 @@ function App() {
         </p>
         <button className="buttonOfFirstSection">Get Started {">"}</button>
       </div>
-      <div className="secondSection">
+      <div className="secondSection" id="2">
         <Row>
           <Col>
             <div className="containerOfFirstCol">
@@ -77,7 +85,7 @@ function App() {
           </Col>
         </Row>
       </div>
-      <div className="thirdSection">
+      <div className="thirdSection" id="3">
         <Row>
           <Col>
             <div className="thirdSectionAnimationContainer">
@@ -111,7 +119,7 @@ function App() {
           </Col>
         </Row>
       </div>
-      <div className="fourthSection">
+      <div className="fourthSection" id="4">
         <h1 className="titleOfFourthSection">Our Services</h1>
         <div className="allTheServicesDiv">
           <OneServiceCard

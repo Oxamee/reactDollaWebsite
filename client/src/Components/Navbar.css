@@ -1,6 +1,9 @@
 /* ALL THE NAVBAR */
 .allTheNavBar {
   overflow-x: hidden;
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
 }
 
 /* BRAND NAME */
@@ -29,6 +32,16 @@
   color: white;
   display: inline-block;
   margin: 10px;
+  cursor: pointer;
+}
+/* ACTIVE WIDGET STYLING */
+.active {
+  text-decoration: none;
+  border-bottom: 3px solid rgb(57, 177, 57);
+  border-radius: 2px;
+}
+.active:hover {
+  color: white;
 }
 /* BUTTON STYLING */
 .signInContainer {
@@ -44,4 +57,9 @@
   outline: none;
   color: black;
   border: none;
+}
+
+/* LINK DECORATION REMOVING */
+.noLink {
+  text-decoration: none;
 }

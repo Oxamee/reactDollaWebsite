@@ -1,10 +1,20 @@
 import React from "react";
 import "./Navbar.css";
 import { Col, Row } from "reactstrap";
+import { Link } from "react-scroll";
 
-function Navbar() {
+function Navbar(props) {
   return (
-    <div className="allTheNavBar" style={{ backgroundColor: "black" }}>
+    <div
+      className={
+        props.isScrolled ? "allTheNavBar scrolledNavbar" : "allTheNavBar"
+      }
+      style={
+        props.isScrolled
+          ? { backgroundColor: "black" }
+          : { backgroundColor: "transparent" }
+      }
+    >
       <Row>
         <Col>
           <div className="brandNameContainer">
@@ -13,10 +23,50 @@ function Navbar() {
         </Col>
         <Col>
           <div className="widgetContainer">
-            <h2 className="widgetName">About</h2>
-            <h2 className="widgetName">Discover</h2>
-            <h2 className="widgetName">Services</h2>
-            <h2 className="widgetName">Sign Up</h2>
+            <h2 className="widgetName">
+              <Link
+                activeClass="active widgetName"
+                to="1"
+                spy={true}
+                smooth={true}
+                duration={80}
+              >
+                About
+              </Link>
+            </h2>
+            <h2 className="widgetName">
+              <Link
+                activeClass="active widgetName"
+                to="2"
+                spy={true}
+                smooth={true}
+                duration={80}
+              >
+                Discover
+              </Link>
+            </h2>
+            <h2 className="widgetName">
+              <Link
+                activeClass="active widgetName"
+                to="4"
+                spy={true}
+                smooth={true}
+                duration={80}
+              >
+                Services
+              </Link>
+            </h2>
+            <h2 className="widgetName">
+              <Link
+                activeClass="active widgetName"
+                to="5"
+                spy={true}
+                smooth={true}
+                duration={80}
+              >
+                Sign Up
+              </Link>
+            </h2>
           </div>
         </Col>
         <Col>

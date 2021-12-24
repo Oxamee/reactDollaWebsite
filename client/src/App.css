@@ -41,7 +41,7 @@
 .secondSection {
   overflow-x: hidden;
   background-color: black;
-  padding: 150px 0px;
+  padding: 180px 0px;
 }
 /* FIRST COL OF SECOND SECTION STYLING */
 .containerOfFirstCol {
@@ -111,6 +111,7 @@
   color: white;
   font-weight: bolder;
   margin-bottom: 70px;
+  font-size: 50px;
 }
 .allTheServicesDiv {
   display: flex;
