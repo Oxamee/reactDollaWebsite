@@ -4,7 +4,7 @@
 }
 /* FIRST SECTION STYLING */
 .firstSection {
-  height: 91vh;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,13 +41,19 @@
 .secondSection {
   overflow-x: hidden;
   background-color: black;
+  padding: 150px 0px;
 }
-/* COMPONENTS OF SECOND SECTION STYLING */
+/* FIRST COL OF SECOND SECTION STYLING */
 .containerOfFirstCol {
   display: block;
-  margin: auto auto;
+  margin: auto 0px auto 30%;
   width: 500px;
   margin-top: 5%;
+}
+.firstCol {
+  width: 100%;
+  justify-content: end;
+  align-items: flex-end;
 }
 .littleDescriptionSecondSection {
   font-weight: bolder;
@@ -60,4 +66,36 @@
 }
 .descriptionOfSecondSection {
   color: white;
+}
+/* SECOND COL OF SECOND SECTION STYLING  */
+
+.containerOfAnimation {
+  padding-right: 15%;
+}
+
+/* THIRD SECTION STYLING */
+.thirdSection {
+  overflow-x: hidden;
+  padding: 150px 0px;
+}
+/* COMPONENTS OF THIRD SECTION STYLING */
+.titleOfThirdSection {
+  color: black;
+}
+.descriptionOfThirdSection {
+  color: black;
+}
+.buttonOfThirdSection {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+.thirdSectionAnimationContainer {
+  padding-left: 50px;
+}
+.containerOfFirstColThirdSection {
+  margin-left: 0px;
 }
