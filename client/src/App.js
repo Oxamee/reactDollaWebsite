@@ -42,7 +42,7 @@ function App() {
   //change color of navbar on scroll
   const [isScrolled, setScrolled] = useState(false);
   function changeBackground() {
-    setScrolled(window.pageYOffset <= 100 ? false : true);
+    setScrolled(window.pageYOffset <= 0 ? false : true);
   }
   window.addEventListener("scroll", changeBackground);
 
@@ -73,9 +73,9 @@ function App() {
           </div>
           <div className="secondSection" id="2">
             <Row>
-              <Col>
-                <div className="containerOfFirstCol">
-                  <div className="firstCol">
+              <Col md={12} lg={6}>
+                <div className="firstCol">
+                  <div>
                     <p className="littleDescriptionSecondSection">
                       PREMIUM BANK
                     </p>
@@ -99,11 +99,10 @@ function App() {
                   </div>
                 </div>
               </Col>
-              <Col>
+              <Col md={12} lg={6}>
                 <div className="containerOfAnimation">
                   <Lottie
                     options={{ ...options, animationData: TravelAnimationData }}
-                    width={500}
                   />
                 </div>
               </Col>
@@ -111,15 +110,14 @@ function App() {
           </div>
           <div className="thirdSection" id="3">
             <Row>
-              <Col>
+              <Col md={12} lg={6}>
                 <div className="thirdSectionAnimationContainer">
                   <Lottie
                     options={{ ...options, animationData: MoneyAnimationData }}
-                    width={500}
                   />
                 </div>
               </Col>
-              <Col>
+              <Col md={12} lg={6}>
                 <div className=" containerOfFirstCol containerOfFirstColThirdSection">
                   <div className="firstCol">
                     <p className="littleDescriptionSecondSection">
@@ -167,7 +165,7 @@ function App() {
           </div>
           <div className="fifthSection" id="5">
             <Row>
-              <Col>
+              <Col md={12} lg={6}>
                 <div className="allTheFifthTexts">
                   <p className="littleDescriptionSecondSection">
                     JOIN OUR TEAM
@@ -190,10 +188,9 @@ function App() {
                   </button>
                 </div>
               </Col>
-              <Col>
+              <Col md={12} lg={6}>
                 <Lottie
                   options={{ ...options, animationData: ChartAnimationData }}
-                  width={500}
                 />
               </Col>
             </Row>
