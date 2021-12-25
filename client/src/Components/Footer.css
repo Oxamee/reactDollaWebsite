@@ -31,6 +31,7 @@
   font-weight: bold;
   font-size: 30px;
 }
+/* RESPONSIVNESS OF FOOTER */
 @media (max-width: 575px) {
   .allTheFooter {
     text-align: center;
