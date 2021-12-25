@@ -21,6 +21,9 @@ import OneServiceCard from "./Components/OneServiceCard.jsx";
 import BeatLoader from "react-spinners/BeatLoader";
 //import footer
 import Footer from "./Components/Footer";
+//for animation css
+import { useSpring, animated } from "react-spring";
+
 function App() {
   //for loading when opening the website
   const [isLoading, setIsLoading] = useState(false);
@@ -35,7 +38,10 @@ function App() {
   //is navigation bar opened
 
   const [isOpen, setIsOpen] = React.useState(false);
-
+  //animation of opening the hamburger menu
+  const appearanceStyle = useSpring({
+    height: isOpen ? 380 : 0,
+  });
   //options for animation (use spread object ... for animationData value)
   const options = {
     loop: true,
@@ -67,13 +73,13 @@ function App() {
             }}
           />
           {isOpen ? (
-            <div className="menuOpened">
+            <animated.div className="menuOpened" style={appearanceStyle}>
               <p className="oneOpenedMenuItem">About</p>
               <p className="oneOpenedMenuItem">Discover</p>
               <p className="oneOpenedMenuItem">Services</p>
               <p className="oneOpenedMenuItem">Sign Up</p>
               <button className="oneOpenedMenuItemButton">Sign In</button>
-            </div>
+            </animated.div>
           ) : null}
           <div className="firstSection" id="1">
             <video
