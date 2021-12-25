@@ -4,13 +4,31 @@ import { Col, Row } from "reactstrap";
 import { Link } from "react-scroll";
 //Hamburger menu for mobile's NavBar
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
+
 function Navbar(props) {
   return (
     <div>
       {window.innerWidth <= 990 ? (
         <div className="allTheNavBar">
           <h1 className="brandNameNavBar">dolla</h1>
-          <GiHamburgerMenu size={30} className="hamburgerMenu"/>
+          {props.isOpen ? (
+            <IoMdClose
+              size={30}
+              className="hamburgerMenu"
+              onClick={() => {
+                props.setIsOpen(false);
+              }}
+            />
+          ) : (
+            <GiHamburgerMenu
+              size={30}
+              className="hamburgerMenu"
+              onClick={() => {
+                props.setIsOpen(true);
+              }}
+            />
+          )}
         </div>
       ) : (
         <div

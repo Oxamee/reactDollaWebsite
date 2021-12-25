@@ -4,7 +4,7 @@
   position: fixed;
   width: 100vw;
   z-index: 5;
-  height: 64px;
+  min-height: 64px;
 }
 /* MOBILE VERSION OF THE NAVBAR */
 
@@ -24,6 +24,7 @@
     margin-right: 30px;
   }
 }
+
 /* BRAND NAME */
 .brandNameContainer {
   text-align: center;

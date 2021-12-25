@@ -24,12 +24,17 @@ import Footer from "./Components/Footer";
 function App() {
   //for loading when opening the website
   const [isLoading, setIsLoading] = useState(false);
+
   useEffect(() => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
     }, 1000); //1 sec so the background video would charge
   }, []);
+
+  //is navigation bar opened
+
+  const [isOpen, setIsOpen] = React.useState(false);
 
   //options for animation (use spread object ... for animationData value)
   const options = {
@@ -54,7 +59,22 @@ function App() {
         </div>
       ) : (
         <div className="Container">
-          <Navbar isScrolled={isScrolled} />
+          <Navbar
+            isScrolled={isScrolled}
+            isOpen={isOpen}
+            setIsOpen={(isOpen) => {
+              setIsOpen(isOpen);
+            }}
+          />
+          {isOpen ? (
+            <div className="menuOpened">
+              <p className="oneOpenedMenuItem">About</p>
+              <p className="oneOpenedMenuItem">Discover</p>
+              <p className="oneOpenedMenuItem">Services</p>
+              <p className="oneOpenedMenuItem">Sign Up</p>
+              <button className="oneOpenedMenuItemButton">Sign In</button>
+            </div>
+          ) : null}
           <div className="firstSection" id="1">
             <video
               src={BackgroundVideo}

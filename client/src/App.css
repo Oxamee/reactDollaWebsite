@@ -18,7 +18,31 @@
   top: 0;
   overflow-y: hidden;
 }
-
+/* MOBILE NAVBAR DIV STYLING */
+.menuOpened {
+  padding: 80px 50px 20px 50px;
+  position: relative;
+  color: white;
+  background-color: #121212;
+  height: fit-content;
+  text-align: center;
+}
+.oneOpenedMenuItem {
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+.oneOpenedMenuItemButton {
+  margin-top: 25px;
+  font-size: 20px;
+  padding: 5px 25px;
+  background-color: rgb(57, 177, 57);
+  border-radius: 20px;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
 /* FIRST SECTION STYLING */
 .firstSection {
   overflow-x: hidden;
@@ -72,7 +96,7 @@
 .secondSection {
   overflow-x: hidden;
   background-color: black;
-  padding: 180px 0px;
+  padding: 120px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
