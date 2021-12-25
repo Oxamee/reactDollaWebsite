@@ -7,7 +7,7 @@ function Footer() {
       <div className="allTheFooter">
         <Container>
           <Row>
-            <Col>
+            <Col sm={6} md={3}>
               <h2 className="titleOfFooter">About Us</h2>
               <p className="oneFooterItem">How it works</p>
               <p className="oneFooterItem">Testimonials</p>
@@ -15,21 +15,21 @@ function Footer() {
               <p className="oneFooterItem">Investors</p>
               <p className="oneFooterItem">Terms of Service</p>
             </Col>
-            <Col>
+            <Col sm={6} md={3}>
               <h2 className="titleOfFooter">Contact Us</h2>
               <p className="oneFooterItem">Contact</p>
               <p className="oneFooterItem">Support</p>
               <p className="oneFooterItem">Destination</p>
               <p className="oneFooterItem">Sponsorships</p>
             </Col>
-            <Col>
+            <Col sm={6} md={3}>
               <h2 className="titleOfFooter">Videos</h2>
               <p className="oneFooterItem">Submit Video</p>
               <p className="oneFooterItem">Ambassadors</p>
               <p className="oneFooterItem">Agency</p>
               <p className="oneFooterItem">Influencer</p>
             </Col>
-            <Col>
+            <Col sm={6} md={3}>
               <h2 className="titleOfFooter">Social Media</h2>
               <p className="oneFooterItem">Instagram</p>
               <p className="oneFooterItem">Facebook</p>

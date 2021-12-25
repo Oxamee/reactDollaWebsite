@@ -31,3 +31,11 @@
   font-weight: bold;
   font-size: 30px;
 }
+@media (max-width: 575px) {
+  .allTheFooter {
+    text-align: center;
+  }
+  .titleOfFooter {
+    margin-top: 20px;
+  }
+}

@@ -115,6 +115,11 @@
     align-items: center;
   }
 }
+@media (max-width: 976px) {
+  .firstCol {
+    text-align: center;
+  }
+}
 /*/////////////////////////////////////////:*/
 
 /* THIRD SECTION STYLING */
@@ -151,8 +156,11 @@
   align-items: center;
 }
 /* THIRD SECTION RESPONSIVENESS */
-@media (max-width: 1024px) {
+@media (max-width: 976px) {
   .descriptionOfThirdSection {
+    text-align: center;
+  }
+  .titleOfThirdSection {
     text-align: center;
   }
 }
