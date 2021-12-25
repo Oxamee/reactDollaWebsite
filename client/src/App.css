@@ -77,6 +77,10 @@
 .thirdSection {
   overflow-x: hidden;
   padding: 150px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 /* COMPONENTS OF THIRD SECTION STYLING */
 .titleOfThirdSection {
@@ -117,4 +121,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* FIFTH SECTION STYLING */
+.fifthSection {
+  padding: 150px 0px;
+  background-color: white;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* COMPONENTS OF FIFTH SECTION STYLING */
+.allTheFifthTexts {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.titleOfFifthSection {
+  color: black;
+  font-size: 50px;
+  font-weight: bolder;
+}
+.buttonOfFifthSection {
+  color: white;
+  width: fit-content;
+  font-weight: 300;
 }

@@ -1,0 +1,32 @@
+/* FIRST PART STYLING */
+
+.allTheFooter {
+  background-color: black;
+  color: white;
+  padding: 70px 350px;
+  overflow-x: hidden;
+}
+.titleOfFooter {
+  font-weight: bolder;
+  font-size: 17px;
+}
+.oneFooterItem {
+  margin: 2px;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* SECOND PART & LAST STYLING */
+.endOfFooter {
+  color: white;
+  overflow-x: hidden;
+  background-color: black;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.titleOfWebsite {
+  font-weight: bold;
+  font-size: 30px;
+}

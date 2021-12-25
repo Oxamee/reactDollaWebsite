@@ -1,10 +1,12 @@
 import "./App.css";
 import React, { useState } from "react";
+//import Navbar
 import Navbar from "./Components/Navbar";
+// import reactstrap for layout
 import { Row, Col } from "reactstrap";
 //importing video background
 import BackgroundVideo from "./videos/background.mp4";
-//importing lottie for animations svg
+//importing lottie for animations
 import Lottie from "react-lottie";
 //importing all my animations
 import TravelAnimationData from "./animation/travel.json";
@@ -12,10 +14,11 @@ import MoneyAnimationData from "./animation/money.json";
 import WinAnimationData from "./animation/win.json";
 import GraphAnimationData from "./animation/graph.json";
 import CashbackAnimationData from "./animation/cashback.json";
-
+import ChartAnimationData from "./animation/chart.json";
 //import services for services section
 import OneServiceCard from "./Components/OneServiceCard.jsx";
-
+//import footer
+import Footer from "./Components/Footer";
 function App() {
   //options for animation (use spread object ... for animationData value)
   const options = {
@@ -32,6 +35,7 @@ function App() {
     setScrolled(window.pageYOffset <= 100 ? false : true);
   }
   window.addEventListener("scroll", changeBackground);
+
   return (
     <div className="Container">
       <Navbar isScrolled={isScrolled} />
@@ -139,6 +143,38 @@ function App() {
           />
         </div>
       </div>
+      <div className="fifthSection" id="5">
+        <Row>
+          <Col>
+            <div className="allTheFifthTexts">
+              <p className="littleDescriptionSecondSection">JOIN OUR TEAM</p>
+              <h1 className="titleOfFifthSection">
+                Creating an
+                <br />
+                account is
+                <br />
+                extremely easy
+              </h1>
+              <p>
+                Get everything set up and ready in under 10 <br />
+                minutes. All you need to do is add your
+                <br />
+                information and you're ready to go
+              </p>
+              <button className=" buttonOfFirstSection buttonOfFifthSection">
+                Start Now
+              </button>
+            </div>
+          </Col>
+          <Col>
+            <Lottie
+              options={{ ...options, animationData: ChartAnimationData }}
+              width={500}
+            />
+          </Col>
+        </Row>
+      </div>
+      <Footer />
     </div>
   );
 }
