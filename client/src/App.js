@@ -21,6 +21,8 @@ import OneServiceCard from "./Components/OneServiceCard.jsx";
 import BeatLoader from "react-spinners/BeatLoader";
 //import footer
 import Footer from "./Components/Footer";
+//for NavBar scroll when clicked
+import { Link } from "react-scroll";
 //for animation css
 import { useSpring, animated } from "react-spring";
 
@@ -74,11 +76,60 @@ function App() {
           />
           {isOpen ? (
             <animated.div className="menuOpened" style={appearanceStyle}>
-              <p className="oneOpenedMenuItem">About</p>
-              <p className="oneOpenedMenuItem">Discover</p>
-              <p className="oneOpenedMenuItem">Services</p>
-              <p className="oneOpenedMenuItem">Sign Up</p>
-              <button className="oneOpenedMenuItemButton">Sign In</button>
+              <Link
+                to="1"
+                spy={true}
+                activeClass="activeMobileNavBarClass"
+                smooth={true}
+                duration={80}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                <p className="oneOpenedMenuItem">About</p>
+              </Link>
+              <Link
+                to="2"
+                spy={true}
+                activeClass="activeMobileNavBarClass"
+                smooth={true}
+                duration={80}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                <p className="oneOpenedMenuItem">Discover</p>
+              </Link>
+              <Link
+                to="4"
+                activeClass="activeMobileNavBarClass"
+                spy={true}
+                smooth={true}
+                duration={80}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                <p className="oneOpenedMenuItem">Services</p>
+              </Link>
+              <Link
+                to="5"
+                spy={true}
+                activeClass="activeMobileNavBarClass"
+                smooth={true}
+                duration={80}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                <p className="oneOpenedMenuItem">Sign Up</p>
+              </Link>
+              <a
+                href="https://5euros.com/profil/oxame"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <button className="oneOpenedMenuItemButton">Sign In</button>
+              </a>
             </animated.div>
           ) : null}
           <div className="firstSection" id="1">
@@ -95,7 +146,14 @@ function App() {
               <br />
               in credit towards your next payment
             </p>
-            <button className="buttonOfFirstSection">Get Started {">"}</button>
+            <a
+              href="https://5euros.com/profil/oxame"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <button className="buttonOfFirstSection">
+                Get Started {">"}
+              </button>
+            </a>
           </div>
           <div className="secondSection" id="2">
             <Row>
@@ -119,9 +177,14 @@ function App() {
                       <br />
                       charged any fees
                     </p>
-                    <button className="buttonOfFirstSection">
-                      Get Started
-                    </button>
+                    <a
+                      href="https://5euros.com/profil/oxame"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <button className="buttonOfFirstSection">
+                        Get Started
+                      </button>
+                    </a>
                   </div>
                 </div>
               </Col>
@@ -163,7 +226,14 @@ function App() {
                       <br />
                       and a phone or computer
                     </p>
-                    <button className="buttonOfThirdSection">Learn More</button>
+                    <a
+                      href="https://5euros.com/profil/oxame"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <button className="buttonOfThirdSection">
+                        Learn More
+                      </button>
+                    </a>
                   </div>
                 </div>
               </Col>
@@ -209,9 +279,14 @@ function App() {
                     <br />
                     information and you're ready to go
                   </p>
-                  <button className=" buttonOfFirstSection buttonOfFifthSection">
-                    Start Now
-                  </button>
+                  <a
+                    href="https://5euros.com/profil/oxame"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <button className=" buttonOfFirstSection buttonOfFifthSection">
+                      Start Now
+                    </button>
+                  </a>
                 </div>
               </Col>
               <Col md={12} lg={6}>
